@@ -1,0 +1,124 @@
+/* Variables */
+:root {
+    /* colors */
+    --accent-color: hsl(75, 94%, 57%);
+    --text-color: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    /* typography */
+    --font-family-base: 'Inter', sans-seif;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-size-base: 14px;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: var(--grey-900);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+/* Center card */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.main-card {
+    background-color: var(--grey-800);
+    width: 340px;
+    height: 540px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Profile info */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    border-radius: 100%;
+    width: 70px;
+    margin-top: 10%;
+    margin-bottom: 6.5%;
+}
+
+/* profile text */
+.profile-name {
+    margin: 0;
+    font-weight: var(--font-weight-semibold);
+}
+
+.profile-location {
+    color: var(--accent-color);
+    font-weight: var(--font-weight-bold);
+    margin: 2%;
+    font-size: 12px;
+}
+
+.profile-quote {
+    margin: 6%;
+}
+
+
+/* links */
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 7%;
+    margin-right: 7%;
+    
+}
+
+.link-container {
+    text-decoration: none;
+    background-color: var(--grey-700);
+    color: var(--text-color);
+    font-weight: var(--font-weight-semibold);
+    font-size: 12px;
+    padding: 4%;
+    margin: 2.5%;
+    border-radius: 8px;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+/* Link hover effect */
+.link-container:hover {
+    background-color: var(--accent-color);
+    color: var(--grey-900);
+}
+
+/* Footer info */
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+    color: var(--text-color);
+    padding: 1rem;
+}
+.attribution a {
+    color: var(--accent-color);
+}
